@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #b91450;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 60%;
+  height: 100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+h1{
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px 40px;
+}
+
+.dati-input{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #333;
+  padding: 15px;
+  margin: 20px;
+}
+
+label{
+  color: #b91450;
+  margin-bottom: 15px;
+}
+
+input, select{
+  border: 1px solid #b91450;
+  border-radius: 5px;
+  height: 35px;
+  text-align: center;
+}
+
+input::placeholder{
+  text-align: center;
+  font-size: 15px;
+}
+
+input:focus, select{
+  background-color: #b91450;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+input:focus::placeholder{
+  color: #fff;
+}
+
+.bottoni{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  color: #b91450;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #cccccc;
+  padding: 3px;
+  cursor: pointer;
+  margin: 5px 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #a96daa;
+}
+
+.btn:hover{
+  background: lightgrey;
+  color: #fff;
+}
