@@ -10,16 +10,21 @@ body{
 }
 
 .container{
-  width: 60%;
+  max-width: 1180px;
   height: 100px;
   margin: auto;
-  padding: 20px 0;
+  padding: 15px;
 }
 
 h1,h2{
   text-align: center;
   font-size: 25px;
   color: #fff;
+  padding: 20px;
+}
+
+#nome-passeggero{
+  margin-top: 10px;
 }
 
 .row{
@@ -31,7 +36,7 @@ h1,h2{
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 15px 40px;
+  margin: 0 30px;
 }
 
 .dati-input{
@@ -39,7 +44,7 @@ h1,h2{
   border-radius: 5px;
   box-shadow: 2px 2px 5px #333;
   padding: 15px;
-  margin: 20px;
+  margin: 15px 0;
 }
 
 label{
@@ -59,7 +64,7 @@ input::placeholder{
   font-size: 15px;
 }
 
-input:focus, select{
+input:focus, select:focus{
   background-color: #b91450;
   border: 1px solid #000;
   color: #fff;
@@ -92,33 +97,33 @@ input:focus::placeholder{
   color: #fff;
 }
 
+.biglietto{
+  margin-top: 20px;
+}
+
 .biglietto-container{
   background-color: #fff;
-  padding: 10px;
-  /* display: none; */
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.container-ticket{
+.dati{
   display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
-h3{
-  padding-top: 10px;
+.nome{
+  background-color: gray;
+  padding: 20px;
 }
 
-h4{
-  font-size: 17px;
-  padding: 10px;
+.offerta table th, .offerta table td{
+  padding: 20px;
+  text-align: center;
 }
 
-.nome-biglietto{
-  flex-shrink: 0;
-  background-color: #808080;
-  padding: 15px;
-}
-
-.offerta-biglietto{
-  width: 100%;
-  padding: 10px 0;
-  border: 1px solid #c0c0c0;
+.show{
+  opacity: 1;
 }
